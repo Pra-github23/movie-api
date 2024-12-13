@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #444;
+    background: linear-gradient(to bottom right, #f0f8ff, #e0f7fa); /* Light gradient from top-left to bottom-right */
+    transition: background 0.3s ease;
+}
+
+
+/* Hover effect for pointer cursor */
+.customers, .view-success {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-decoration: underline; /* Optional: Adds underline effect */
+    color: white;
+}
+
+/* Hover effect for View Our Success */
+.view-success:hover {
+    color: #ffb84d; /* Color change on hover */
+    font-weight: bold; /* Bold text on hover */
+}
+
+/* Header Styling */
+header {
+    background: rgba(52, 152, 219, 0.8); /* Light blue background with transparency */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #1abc9c;
+    color: white;
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+    box-shadow: 0 5px 15px rgba(26, 188, 156, 0.3); /* Adding a subtle shadow effect */
+}
+
+header nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1abc9c;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s, left 0.3s;
+}
+
+header nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* Section Styling */
+section {
+    padding: 20px 0;
+    
+
+}
+
+/* About Section */
+section#about {
+    background: rgba(255, 255, 255, 0.8); /* White with light transparency */
+    padding: 40px 0;
+}
+
+section#about h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left:45%;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+/* Service Section */
+/* Service Section */
+#services {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+section#services h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left:45%;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 22%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+.service-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+        margin: 15px 0;
+    }
+}
+
+
+/* Contact Form */
+section#contact h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left:45%;
+}
+form {
+    background: rgba(255, 255, 255, 0.9); /* Light white background with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #1abc9c; /* Light teal color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 45%;
+}
+
+form button:hover {
+    background-color: #16a085;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* General p tag styling */
+p {
+    font-size: 1.1em; /* Slightly larger text */
+    color: #444;      /* Darker color for better readability */
+    line-height: 1.8; /* Increased line spacing for better readability */
+    margin-bottom: 20px; /* Adds space after each paragraph */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    text-align: justify; /* Justifies the text for a more formal layout */
+}
+
+/* Special styling for about section paragraph */
+#about p {
+    font-size: 1.2em; /* Larger font for emphasis */
+    color: #555;      /* Softer color for the About Us section */
+    text-align: justify; /* Justified text for clean look */
+    margin-top: 20px;
+}
+
+/* Special styling for service section paragraphs */
+#services .service-item p {
+    font-size: 1em; /* Regular size for service descriptions */
+    color: #666;    /* Light gray color for descriptions */
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Hover effect on paragraphs in the services section for interactivity */
+#services .service-item:hover p {
+    color: #28a745;  /* Change color on hover for emphasis */
+    transition: color 0.3s ease;
+}
